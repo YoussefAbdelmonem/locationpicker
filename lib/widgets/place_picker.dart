@@ -144,10 +144,12 @@ class PlacePickerState extends State<PlacePicker> {
       child: Scaffold(
         appBar: AppBar(
           key: this.appBarKey,
+          backgroundColor: Color(0xFF002C6D),
           title: SearchInput(searchPlace),
           centerTitle: true,
           automaticallyImplyLeading: false,
         ),
+        backgroundColor: Color(0xFF002C6D),
         body: Column(
           children: <Widget>[
             Expanded(
@@ -189,7 +191,7 @@ class PlacePickerState extends State<PlacePicker> {
                         Navigator.of(context).pop(this.locationResult);
                       }
                     }, widget.localizationItem!.tapToSelectLocation),
-                    Divider(height: 8),
+                    Divider(height: 8,color: Color(0xFF002C6D),),
                     Padding(
                       child: Text(widget.localizationItem!.nearBy,
                           style: TextStyle(fontSize: 16)),
